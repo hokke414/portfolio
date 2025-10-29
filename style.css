@@ -6,31 +6,6 @@ body {
   line-height: 1.7;
 }
 
-/* ヘッダー */
-header {
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-  padding: 1rem 2rem;
-}
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-}
-.logo img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
 /* セクション */
 .section {
   max-width: 900px;
@@ -117,9 +92,42 @@ h2 {
 }
 
 
+
+
+header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 1.5rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* 横幅が足りない時は自動折り返し */
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex-shrink: 0; /* 縮まないように */
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 nav {
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap; /* 狭いとき折り返し */
 }
 
 nav a {
@@ -134,18 +142,31 @@ nav a:hover {
   transform: translateY(-1px);
 }
 
-/* --- スマホ画面用 (768px以下) --- */
+/* --- スマホ対応 --- */
 @media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
   .header-container {
-    flex-direction: column; /* ロゴとナビを縦並びに */
-    align-items: flex-start;
-    gap: 0.8rem;
+    flex-direction: column; /* 縦並びに変更 */
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo {
+    flex-direction: column; /* ロゴとテキストを縦配置 */
+    gap: 0.4rem;
+  }
+
+  .logo img {
+    width: 50px;
+    height: 50px;
   }
 
   nav {
-    width: 100%;
-    flex-wrap: wrap; /* 横幅が狭いとき折り返す */
-    gap: 1rem;
+    justify-content: center;
+    gap: 1.2rem;
   }
 
   nav a {
