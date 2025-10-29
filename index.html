@@ -1,49 +1,58 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About hokke414</title>
-  <link rel="icon" href="files/hokke.png" sizes="32x32">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="学生エンジニアのポートフォリオ兼ブログ。Web制作・メタバース開発・プログラミング記録などを発信中。">
+  <link rel="icon" href="blogs/files/hokke.png">
+  <title>hokke414 Club</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <a href="#about">経歴</a>
-      <a href="#blog">ブログ</a>
-      <a href="#contact">連絡先</a>
-    </nav>
+    <div class="header-container">
+      <div class="logo">
+        <img src="blogs/files/hokke.png" alt="サイトロゴ">
+        <h1>My Portfolio</h1>
+      </div>
+      <nav>
+        <a href="#about">Bio/Project</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact me</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>経歴</h2>
-      <p>大学情報学部志望。Webメタバース開発・Unityに興味があります。</p>
-      <p>個人開発・チーム開発を通じて、表現と技術の両立を目指しています。</p>
-    </section>
 
-    <section id="blog">
-      <h2>Blog</h2>
-      <ul id="blog-list">
-        <li><a href="blog/post1.html">test1</a> <span>2025-10-27</span></li>
-        <li><a href="blog/post2.html">test2</a> <span>2025-11-01</span></li>
-      </ul>
-    </section>
+  <section id="about" class="section">  <!-- bio/project -->
+    <h2>Bio/Project</h2>
+    <p>高校３年生、受験生だお</p>
+  </section>
 
-    <section id="contact">
-      <h2>連絡先</h2>
-      <p>GitHub: <a href="https://github.com/hokke414" target="_blank">@hokke414/a></p>
-      <p>X(旧Twitter): <a href="https://x.com/hokke414" target="_blank">@hokke414/a></p>
-      <p>Email: hokke41499@gmail.com</p>
-    </section>
 
-    <p>最終更新：2025.10/27</p>
-  </main>
+  <section id="blog" class="section"> <!-- blog -->
+    <h2>Blog</h2>
+
+    <div id="blog-list" class="card-container">
+      <!-- JSがここにカードを自動生成 -->
+    </div>
+
+    <div id="pagination" class="pagination"></div>
+  </section>
+
+  <section id="contact" class="section"> <!-- contact me -->
+    <h2>Contact me</h2>
+    <p>Mail:<a href="mailto:example@example.com">hokke41499@gmail.com</a></p>
+    <p>GitHub:<a href="https://github.com/hokke414">@hokke414</a></p>
+    <p>X(旧Twitter):<a href="https://x.com/hokke414">@hokke414</a></p>
+  </section>
+
 
   <footer>
     <p>&copy; 2025 hokke414</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

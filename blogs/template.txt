@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ブログを開設しました。初めてのWeb開発体験について書いています。">
+  <link rel="icon" href="files/hokke.png">
+  <title> - hokke414 Club</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="files/hokke.png" alt="サイトロゴ">
+        <h1><a href="../index.html">hokke414 Club</a></h1>
+      </div>
+      <nav>
+        <a href="../index.html">経歴</a>
+        <a href="../index.html">ブログ</a>
+        <a href="../index.html">連絡先</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <article>
+      <h1></h1>
+      <p class="date">2025年10月29日</p>
+      <img src="" alt="記事のメイン画像" class="article-img">
+
+
+
+    </article>
+
+
+
+
+    <div id="recommend-area"><!--おすすめ記事ゾーン--></div>
+
+  </main>
+
+  <footer>
+    <p>&copy; hokke414</p>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script>
+    // 現在の記事ファイル名を自動取得して渡す
+    const currentArticle = "article1.html";
+    renderRecommendationsForArticle(currentArticle);
+  </script>
+</body>
+</html>
