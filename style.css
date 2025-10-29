@@ -116,9 +116,10 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
+
 nav {
   display: flex;
-  gap: 2rem; /* ← ボタン間の余白を調整したい場合ここを変更 */
+  gap: 2rem;
 }
 
 nav a {
@@ -131,4 +132,24 @@ nav a {
 nav a:hover {
   color: #0078d7;
   transform: translateY(-1px);
+}
+
+/* --- スマホ画面用 (768px以下) --- */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column; /* ロゴとナビを縦並びに */
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  nav {
+    width: 100%;
+    flex-wrap: wrap; /* 横幅が狭いとき折り返す */
+    gap: 1rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 0.3rem 0;
+  }
 }
