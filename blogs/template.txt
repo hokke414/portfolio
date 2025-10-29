@@ -14,12 +14,12 @@
     <div class="header-container">
       <div class="logo">
         <img src="files/hokke.png" alt="サイトロゴ">
-        <h1><a href="../index.html">hokke414 Club</a></h1>
+        <h1>hokke414 Club</a></h1>
       </div>
       <nav>
-        <a href="../index.html">経歴</a>
-        <a href="../index.html">ブログ</a>
-        <a href="../index.html">連絡先</a>
+        <a href="../index.html">Bio/Project</a>
+        <a href="../index.html">Blog</a>
+        <a href="../index.html">Contact me</a>
       </nav>
     </div>
   </header>

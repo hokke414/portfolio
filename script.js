@@ -1,53 +1,53 @@
 // blog data
 const articles = [
   {
-    title: "初めてのWeb開発体験",
-    description: "Unityとの違いを感じた日...",
-    img: "images/post1.jpg",
+    title: "ブログ開発しました",
+    description: "待ちきれず開設いたしました",
+    img: "blogs/files/hokke.png",
     tag: "お知らせ",
-    link: "blog/article1.html"
+    link: "blogs/article1.html"
   },
   {
     title: "近日公開",
     description: "",
-    img: "blogs/files/noimage.png",
+    img: "blogs/files/noimg.png",
     tag: "開発",
     link: "blogs/article2.html"
   },
   {
     title: "近日公開",
     description: "",
-    img: "blogs/files/noimage.png",
+    img: "blogs/files/noimg.png",
     tag: "開発",
-    link: "blog/article3.html"
-  },
-  {
-    title: "近日公開",
-    description: "両者の開発思想の差とは？",
-    img: "blogs/files/noimage.png",
-    tag: "開発",
-    link: "blog/article4.html"
+    link: "blogs/article3.html"
   },
   {
     title: "近日公開",
     description: "",
-    img: "blogs/files/noimage.png",
+    img: "blogs/files/noimg.png",
     tag: "開発",
-    link: "blog/article5.html"
+    link: "blogs/article4.html"
   },
   {
     title: "近日公開",
     description: "",
-    img: "blogs/files/noimage.png",
+    img: "blogs/files/noimg.png",
     tag: "開発",
-    link: "blog/article6.html"
+    link: "blogs/article5.html"
   },
   {
     title: "近日公開",
     description: "",
-    img: "blogs/files/noimage.png",
+    img: "blogs/files/noimg.png",
     tag: "開発",
-    link: "blog/article7.html"
+    link: "blogs/article6.html"
+  },
+  {
+    title: "近日公開",
+    description: "",
+    img: "blogs/files/noimg.png",
+    tag: "開発",
+    link: "blogs/article7.html"
   }
 ];
 

@@ -115,3 +115,20 @@ h2 {
 .recommend .card-container {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
+
+nav {
+  display: flex;
+  gap: 2rem; /* ← ボタン間の余白を調整したい場合ここを変更 */
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+  color: #0078d7;
+  transform: translateY(-1px);
+}
