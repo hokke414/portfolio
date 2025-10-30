@@ -176,7 +176,7 @@ nav a:hover {
 }
 
 
-.article-thumbnail {
+.article-img {
   width: 100%;
   height: auto; /* 高さを自動調整 */
   max-width: 900px; /* PCでは幅制限 */
@@ -187,7 +187,7 @@ nav a:hover {
 }
 
 @media (max-width: 768px) {
-  .article-thumbnail {
+  .article-img {
     margin-bottom: 1.2rem;
     border-radius: 8px;
   }
