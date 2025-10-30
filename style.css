@@ -174,3 +174,22 @@ nav a:hover {
     padding: 0.3rem 0;
   }
 }
+
+
+.article-thumbnail {
+  width: 100%;
+  height: auto; /* 高さを自動調整 */
+  max-width: 900px; /* PCでは幅制限 */
+  display: block;
+  margin: 0 auto 2rem auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .article-thumbnail {
+    margin-bottom: 1.2rem;
+    border-radius: 8px;
+  }
+}
+
