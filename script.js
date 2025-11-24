@@ -8,10 +8,10 @@ const articles = [
     link: "blogs/article1.html"
   },
   {
-    title: "近日公開",
-    description: "",
-    img: "blogs/files/noimg.png",
-    tag: "開発",
+    title: "[Zenn]無知がGoogle App Scriptで学校祭の受付予約サービスを構築してみた話",
+    description: "ついに初めてZennに記事を投稿しました！！",
+    img: "blogs/files/zenn.jpg",
+    tag: "ブログ",
     link: "blogs/article2.html"
   },
   {
