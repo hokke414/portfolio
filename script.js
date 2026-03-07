@@ -9,16 +9,16 @@ const articles = [
   },
   {
     title: "[Zenn]無知がGoogle App Scriptで学校祭の受付予約サービスを構築してみた話",
-    description: "ついに初めてZennに記事を投稿しました！！",
+    description: "ついに初めてZennに記事を投稿しました",
     img: "blogs/files/zenn.jpg",
     tag: "ブログ",
     link: "blogs/article2.html"
   },
   {
-    title: "近日公開",
-    description: "",
-    img: "blogs/files/noimg.png",
-    tag: "開発",
+    title: "[Zenn]個人開発で困らない程度までGitを学ぶ",
+    description: "約5300文字にわたるGit/Githubの使い方をまとめました",
+    img: "blogs/files/zenn.jpg",
+    tag: "ブログ",
     link: "blogs/article3.html"
   },
   {
