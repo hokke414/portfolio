@@ -3,7 +3,7 @@ const articles = [
   {
     title: "ブログ開発しました",
     description: "待ちきれず開設いたしました",
-    img: "blogs/files/hokke.png",
+    img: "blogs/files/hokke.jpeg",
     tag: "お知らせ",
     link: "blogs/article1.html"
   },
