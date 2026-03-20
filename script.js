@@ -22,10 +22,10 @@ const articles = [
     link: "blogs/article3.html"
   },
   {
-    title: "近日公開",
-    description: "",
-    img: "blogs/files/noimg.png",
-    tag: "開発",
+    title: "[Zenn][個人開発記録#0]開発目標の決定と環境構築",
+    description: "個人開発開始のお知らせと環境構築",
+    img: "blogs/files/zenn.jpg",
+    tag: "ブログ",
     link: "blogs/article4.html"
   },
   {

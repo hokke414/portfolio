@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="">
+  <meta name="description" content="[aaaaaaaaaaaaaaaaaaa]">
   <link rel="icon" href="files/hokke.jpeg">
-  <title> - hokke414</title>
+  <title>[aaaaaaaaaaaaaaaaaaa] - hokke414</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
@@ -26,10 +26,18 @@
 
   <main class="section">
     <article>
-      <h1></h1>
-      <p class="date"></p>
-      <img src="" alt="記事のメイン画像" class="article-img">
+      <h1>aaaaaaaaaaaaaaaaaaa</h1>
+      <p class="date">aaaaaaaaaaaaaaaaaaa</p>
+      <img src="aaaaaaaaaaaaaaaaaaa" alt="記事のメイン画像" class="article-img">
 
+
+    <p>aaaaaaaaaaaaaaaaaaa</p>
+    <p>aaaaaaaaaaaaaaaaaaa</p>
+    <p>aaaaaaaaaaaaaaaaaaa</p>
+    <p>aaaaaaaaaaaaaaaaaaa</p>
+
+
+    <p><a href="https://zenn.dev/hokke414/articles/ad9e3bcff8fd09">[Zenn記事はこちら]</a></p>
 
 
     </article>
