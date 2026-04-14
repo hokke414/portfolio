@@ -6,11 +6,14 @@
   <meta name="description" content="ブログを開設しました。初めてのWeb開発体験について書いています。">
   <link rel="icon" href="files/hokke.jpeg">
   <title>ブログ開設しました - hokke414</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
 
-  <header>
+  <header class="site-header">
     <div class="header-container">
       <div class="logo">
         <img src="files/hokke.jpeg" alt="サイトロゴ">
@@ -19,10 +22,16 @@
       <nav>
         <a href="../index.html">Bio/Project</a>
         <a href="../index.html">Blog</a>
-        <a href="../index.html">Conntact me</a>
+        <a href="../index.html">Contact me</a>
       </nav>
     </div>
   </header>
+
+  <section class="article-hero section">
+    <p class="eyebrow">BLOG ARTICLE</p>
+    <h2>ブログ開設しました</h2>
+    <p class="hero-lead">公開日: 2025年10月29日</p>
+  </section>
 
   <main class="section">
     <article>
@@ -53,8 +62,7 @@
 
   <script src="../script.js"></script>
   <script>
-    // 現在の記事ファイル名を自動取得して渡す
-    const currentArticle = "article1.html";
+    const currentArticle = window.location.pathname.split("/").pop() || "article1.html";
     renderRecommendationsForArticle(currentArticle);
   </script>
 </body>

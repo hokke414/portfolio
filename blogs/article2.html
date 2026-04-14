@@ -6,11 +6,14 @@
   <meta name="description" content="zennに初めて記事を投稿しました！高校最後の学校祭で受付予約サービスを構築した話を書いています。ぜひ読んでみてください！" />
   <link rel="icon" href="files/hokke.jpeg">
   <title>[Zenn]無知がGoogle App Scriptで学校祭の受付予約サービスを構築してみた話 - hokke414</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
 
-  <header>
+  <header class="site-header">
     <div class="header-container">
       <div class="logo">
         <img src="files/hokke.jpeg" alt="サイトロゴ">
@@ -23,6 +26,12 @@
       </nav>
     </div>
   </header>
+
+  <section class="article-hero section">
+    <p class="eyebrow">BLOG ARTICLE</p>
+    <h2>[Zenn] 無知がGoogle App Scriptで学校祭の受付予約サービスを構築してみた話</h2>
+    <p class="hero-lead">公開日: 2025年11月24日</p>
+  </section>
 
   <main class="section">
     <article>
@@ -55,8 +64,7 @@
 
   <script src="../script.js"></script>
   <script>
-    // 現在の記事ファイル名を自動取得して渡す
-    const currentArticle = "article1.html";
+    const currentArticle = window.location.pathname.split("/").pop() || "article2.html";
     renderRecommendationsForArticle(currentArticle);
   </script>
 </body>

@@ -2,6 +2,7 @@
 const articles = [
   {
     title: "ブログ開発しました",
+    publishedAt: "2025年10月29日",
     description: "待ちきれず開設いたしました",
     img: "blogs/files/hokke.jpeg",
     tag: "お知らせ",
@@ -9,6 +10,7 @@ const articles = [
   },
   {
     title: "[Zenn]無知がGoogle App Scriptで学校祭の受付予約サービスを構築してみた話",
+    publishedAt: "2025年11月24日",
     description: "ついに初めてZennに記事を投稿しました",
     img: "blogs/files/zenn.jpg",
     tag: "ブログ",
@@ -16,6 +18,7 @@ const articles = [
   },
   {
     title: "[Zenn]個人開発で困らない程度までGitを学ぶ",
+    publishedAt: "2026年3月7日",
     description: "約5300文字にわたるGit/Githubの使い方をまとめました",
     img: "blogs/files/zenn.jpg",
     tag: "ブログ",
@@ -23,6 +26,7 @@ const articles = [
   },
   {
     title: "[Zenn][個人開発記録#0]開発目標の決定と環境構築",
+    publishedAt: "2026年3月21日",
     description: "個人開発開始のお知らせと環境構築",
     img: "blogs/files/zenn.jpg",
     tag: "ブログ",
@@ -30,6 +34,7 @@ const articles = [
   },
   {
     title: "近日公開",
+    publishedAt: "準備中",
     description: "",
     img: "blogs/files/noimg.png",
     tag: "開発",
@@ -37,6 +42,7 @@ const articles = [
   },
   {
     title: "近日公開",
+    publishedAt: "準備中",
     description: "",
     img: "blogs/files/noimg.png",
     tag: "開発",
@@ -44,6 +50,7 @@ const articles = [
   },
   {
     title: "近日公開",
+    publishedAt: "準備中",
     description: "",
     img: "blogs/files/noimg.png",
     tag: "開発",
@@ -64,6 +71,19 @@ const articles = [
 const articlesPerPage = 6;
 let currentPage = 1;
 
+function createCardMarkup(article, isArticlePage = false) {
+  const imgPrefix = isArticlePage ? "../" : "";
+  const safeDescription = article.description || "更新をお待ちください。";
+
+  return `
+    <img src="${imgPrefix}${article.img}" alt="${article.title}">
+    <h3>${article.title}</h3>
+    <p class="card-date">公開日: ${article.publishedAt}</p>
+    <p>${safeDescription}</p>
+    <span class="tag">${article.tag}</span>
+  `;
+}
+
 function renderArticles() {
   const start = (currentPage - 1) * articlesPerPage;
   const end = start + articlesPerPage;
@@ -77,12 +97,7 @@ function renderArticles() {
     const card = document.createElement("a");
     card.className = "card";
     card.href = article.link;
-    card.innerHTML = `
-      <img src="${article.img}" alt="${article.title}">
-      <h3>${article.title}</h3>
-      <p>${article.description}</p>
-      <span class="tag">${article.tag}</span>
-    `;
+    card.innerHTML = createCardMarkup(article);
     container.appendChild(card);
   });
 
@@ -123,12 +138,7 @@ function renderRecommendations() {
     const card = document.createElement("a");
     card.className = "card";
     card.href = article.link;
-    card.innerHTML = `
-      <img src="${article.img}" alt="${article.title}">
-      <h3>${article.title}</h3>
-      <p>${article.description}</p>
-      <span class="tag">${article.tag}</span>
-    `;
+    card.innerHTML = createCardMarkup(article);
     recommendContainer.appendChild(card);
   });
 
@@ -155,12 +165,7 @@ function renderRecommendationsForArticle(currentFile) {
     const card = document.createElement("a");
     card.className = "card";
     card.href = "../" + article.link;
-    card.innerHTML = `
-      <img src="../${article.img}" alt="${article.title}">
-      <h3>${article.title}</h3>
-      <p>${article.description}</p>
-      <span class="tag">${article.tag}</span>
-    `;
+    card.innerHTML = createCardMarkup(article, true);
     recommendContainer.appendChild(card);
   });
 

@@ -13,13 +13,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="学生エンジニアのポートフォリオ兼ブログ。Web制作・個人開発・プログラミング記録などを発信中。">
+  <meta property="og:title" content="hokke414 | Portfolio & Blog">
+  <meta property="og:description" content="学生エンジニアのポートフォリオ兼ブログ。開発記録・個人制作・学習ログを発信中。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="blogs/files/hokke.jpeg">
   <link rel="icon" href="blogs/files/hokke.jpeg">
   <title>hokke414</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
+  <header class="site-header">
     <div class="header-container">
       <div class="logo">
         <img src="blogs/files/hokke.jpeg" alt="サイトロゴ">
@@ -33,32 +40,68 @@
     </div>
   </header>
 
+  <main>
+    <section class="hero section">
+      <p class="eyebrow">PORTFOLIO / BLOG</p>
+      <h2>Build, Break, Learn.<br>雨の日でも手を動かす学生エンジニア。</h2>
+      <p class="hero-lead">フルスタック志向で、実装しながら学ぶスタイル。制作ログと技術記事をこのサイトで公開しています。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#blog">記事を読む</a>
+        <a class="btn btn-ghost" href="#contact">連絡する</a>
+      </div>
+    </section>
 
-  <section id="about" class="section">  <!-- bio/project -->
-    <h2>Bio/Project</h2>
-    <p>大学生、フルスタックエンジニアを目指して個人開発をしています。</p>
-  </section>
+    <section id="about" class="section">
+      <h2>Bio/Project</h2>
+      <p class="section-lead">大学生。個人開発を中心に、Webアプリ設計から実装・公開まで一気通貫で取り組んでいます。</p>
+      <div class="about-grid">
+        <article class="info-card">
+          <h3>Focus</h3>
+          <p>フロントエンドとバックエンドを横断し、使ってもらえる体験を重視した開発を実践。</p>
+        </article>
+        <article class="info-card">
+          <h3>Now Building</h3>
+          <p>予約・管理系の業務改善ツールや、小さく試して改善できる個人サービスを開発中。</p>
+        </article>
+        <article class="info-card">
+          <h3>Learning</h3>
+          <p>Git/GitHub運用、クラウド基盤、パフォーマンス改善、継続運用を意識した設計。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="blog" class="section">
+      <h2>Blog</h2>
+      <p class="section-lead">開発ログ、技術メモ、試行錯誤の記録を更新しています。</p>
+
+      <div id="blog-list" class="card-container">
+        <!-- JSがここにカードを自動生成 -->
+      </div>
+
+      <div id="pagination" class="pagination"></div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact me</h2>
+      <div class="contact-grid">
+        <a class="contact-item" href="mailto:hokke41499@gmail.com">
+          <span class="label">Mail</span>
+          <span class="value">hokke41499@gmail.com</span>
+        </a>
+        <a class="contact-item" href="https://github.com/hokke414" target="_blank" rel="noopener noreferrer">
+          <span class="label">GitHub</span>
+          <span class="value">@hokke414</span>
+        </a>
+        <a class="contact-item" href="https://x.com/hokke414" target="_blank" rel="noopener noreferrer">
+          <span class="label">X (旧Twitter)</span>
+          <span class="value">@hokke414</span>
+        </a>
+      </div>
+    </section>
+  </main>
 
 
-  <section id="blog" class="section"> <!-- blog -->
-    <h2>Blog</h2>
-
-    <div id="blog-list" class="card-container">
-      <!-- JSがここにカードを自動生成 -->
-    </div>
-
-    <div id="pagination" class="pagination"></div>
-  </section>
-
-  <section id="contact" class="section"> <!-- contact me -->
-    <h2>Contact me</h2>
-    <p>Mail:<a href="mailto:hokke41499@gmail.com">hokke41499@gmail.com</a></p>
-    <p>GitHub:<a href="https://github.com/hokke414">@hokke414</a></p>
-    <p>X(旧Twitter):<a href="https://x.com/hokke414">@hokke414</a></p>
-  </section>
-
-
-  <footer>
+  <footer class="site-footer">
     <p>&copy; 2026 hokke414</p>
   </footer>
 
