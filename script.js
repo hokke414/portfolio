@@ -143,10 +143,28 @@ function createCardMarkup(article, isArticlePage = false) {
   `;
 }
 
+function toPublishedTimestamp(publishedAt) {
+  const matched = publishedAt.match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);
+  if (!matched) return Number.NEGATIVE_INFINITY;
+
+  const [, year, month, day] = matched;
+  return new Date(Number(year), Number(month) - 1, Number(day)).getTime();
+}
+
+function getSortedArticles() {
+  return [...articles].sort((a, b) => {
+    const dateDiff = toPublishedTimestamp(b.publishedAt) - toPublishedTimestamp(a.publishedAt);
+    if (dateDiff !== 0) return dateDiff;
+
+    return b.link.localeCompare(a.link);
+  });
+}
+
 function renderArticles() {
+  const sortedArticles = getSortedArticles();
   const filteredArticles = activeTag === "all"
-    ? articles
-    : articles.filter(article => article.tag === activeTag);
+    ? sortedArticles
+    : sortedArticles.filter(article => article.tag === activeTag);
 
   const start = (currentPage - 1) * articlesPerPage;
   const end = start + articlesPerPage;
@@ -208,7 +226,7 @@ function renderLatestArticles(limit = 6) {
   if (!container) return;
 
   container.innerHTML = "";
-  const latestArticles = [...articles].slice(0, limit);
+  const latestArticles = getSortedArticles().slice(0, limit);
   latestArticles.forEach(article => {
     const card = document.createElement("a");
     card.className = "card";
