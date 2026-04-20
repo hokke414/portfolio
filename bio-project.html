@@ -1,39 +1,25 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NCZG0ZS63"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-4NCZG0ZS63');
-  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="学生エンジニアのポートフォリオ兼ブログ。Web制作・個人開発・プログラミング記録などを発信中。">
-  <meta property="og:title" content="hokke414 | Portfolio & Blog">
-  <meta property="og:description" content="学生エンジニアのポートフォリオ兼ブログ。開発記録・個人制作・学習ログを発信中。">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="blogs/files/hokke.jpeg">
+  <meta name="description" content="hokke414のBio/Projectページ。現在の開発テーマや取り組み内容を紹介しています。">
   <link rel="icon" href="blogs/files/hokke.jpeg">
-  <title>hokke414</title>
+  <title>Bio/Project - hokke414</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header class="site-header">
     <div class="header-container">
       <div class="logo">
         <img src="blogs/files/hokke.jpeg" alt="サイトロゴ">
-        <h1>hokke414</h1>
+        <h1><a href="index.html">hokke414</a></h1>
       </div>
       <nav>
-        <a href="bio-project.html">Bio/Project</a>
+        <a href="index.html">Home</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact me</a>
       </nav>
@@ -41,39 +27,54 @@
   </header>
 
   <main>
-    <section class="hero section">
-      <p class="eyebrow">PORTFOLIO / BLOG</p>
-      <h2>Build, Break, Learn.<br>雨の日でも手を動かす学生エンジニア。</h2>
-      <p class="hero-lead">拡張現実を通して社会を変えていく。<br>制作ログと技術記事をこのサイトで公開しています。</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="blog.html">記事を読む</a>
-        <a class="btn btn-ghost" href="contact.html">連絡する</a>
+    <section class="article-hero section">
+      <p class="eyebrow">BIO / PROJECT</p>
+      <h2>作って試して、次に活かす。</h2>
+      <p class="hero-lead">設計から実装、改善までを一貫する。<br>実務を通して技術を磨いています。</p>
+    </section>
+
+    <section class="section">
+      <h2>Bio</h2>
+      <p class="section-lead">個人開発を中心に、課題発見から実装・運用までを一連の流れで学んでいます。</p>
+      <div class="about-grid">
+        <article class="info-card">
+          <h3>Focus</h3>
+          <p>拡張現実を活用したアプリケーションの開発に注力。</p>
+        </article>
+        <article class="info-card">
+          <h3>Now Building</h3>
+          <p>拡張現実を身近に感じられるアプリケーションの開発に取り組んでいます。</p>
+        </article>
+        <article class="info-card">
+          <h3>Learning</h3>
+          <p>Git/GitHub運用、Unityを用いた開発。</p>
+        </article>
       </div>
     </section>
 
     <section class="section">
-      <h2>Sections</h2>
+      <h2>History</h2>
       <p class="section-lead"></p>
-      <div class="portal-grid">
-        <article class="portal-card">
-          <h3>Bio/Project</h3>
-          <p>現在取り組んでいる開発テーマ、設計方針、今後の計画をまとめています。</p>
-          <a class="portal-link" href="bio-project.html">詳しく見る</a>
+      <div class="history-timeline" aria-label="経歴タイムライン">
+        <article class="history-item">
+          <p class="history-date">2026年4月</p>
+          <h3>工学系大学入学</h3>
+          <p>大学での学びをスタート。授業と並行して個人開発を継続中。</p>
         </article>
-        <article class="portal-card">
-          <h3>Blog</h3>
-          <p>開発記録・技術メモ・試行錯誤を時系列で整理しています。</p>
-          <a class="portal-link" href="blog.html">記事一覧へ</a>
+        <article class="history-item">
+          <p class="history-date">2025年11月</p>
+          <h3>Zenn初投稿</h3>
+          <p>学校祭向け予約サービス開発の振り返り記事を公開。</p>
         </article>
-        <article class="portal-card">
-          <h3>Contact me</h3>
-          <p>メール・GitHub・X から連絡できます。<br>ご用があればこちらからご連絡ください。</p>
-          <a class="portal-link" href="contact.html">連絡先を見る</a>
+        <article class="history-item history-item--placeholder">
+          <p class="history-date">2025年8月</p>
+          <h3>Webサイト開設</h3>
+          <p></p>
         </article>
       </div>
     </section>
 
-    <section id="stacks" class="section stack-section">
+    <section class="section">
       <h2>Tech Stack</h2>
       <p class="section-lead"></p>
       <div class="stack-marquee" aria-label="利用技術スタック">
@@ -139,21 +140,7 @@
         </div>
       </div>
     </section>
-
-    <section class="section" id="home-blog-preview">
-      <h2>Latest Blog</h2>
-      <p class="section-lead">最近の記事6件を表示しています。</p>
-
-      <div id="latest-blog-list" class="card-container">
-        <!-- JSがここにカードを自動生成 -->
-      </div>
-
-      <div class="section-action">
-        <a class="btn btn-primary" href="blog.html">もっと見る</a>
-      </div>
-    </section>
   </main>
-
 
   <footer class="site-footer">
     <p>&copy; 2026 hokke414</p>
